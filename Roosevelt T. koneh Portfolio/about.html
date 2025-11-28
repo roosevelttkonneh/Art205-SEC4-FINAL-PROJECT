@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Roosevelt T. Konneh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Roosevelt T. Konneh<span class="accent">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-hero">
+      <div class="about-grid">
+        <div>
+          <h1>About Me</h1>
+          <p>I’m Roosevelt T. Konneh , a passionate front-end developer who enjoys turning ideas into beautiful, usable interfaces. My focus is on accessible, responsive design and maintainable code.</p>
+          <p>I enjoy prototyping in Figma, developing component-driven UIs and optimizing performance for real-world users.</p>
+        </div>
+
+        <div class="about-photo">
+          <button class="photo-btn" id="openPhotoAbout" aria-haspopup="dialog" aria-controls="photoModal">
+            <img src="20240825_155050.jpg" alt="Roosevelt T. Konneh photo">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Frontend Developer</strong> — Built component libraries and responsive apps.</li>
+        <li><strong>UI Engineer</strong> — Improved accessibility and performance for product teams.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Roosevelt T. Konneh</p>
+    </div>
+  </footer>
+
+  <!-- Reuse the photo modal from index via script.js -->
+  <div id="photoModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="photoTitle">
+    <div class="modal-content">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="photoTitle">About Roosevelt T. Konneh</h3>
+      <p>I focus on modern CSS, component-driven UIs and accessibility. I enjoy mentoring and contributing to open source.</p>
+      <div class="modal-actions">
+        <button class="btn" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

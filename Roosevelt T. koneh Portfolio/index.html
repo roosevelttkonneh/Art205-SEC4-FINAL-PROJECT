@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Roosevelt T. Konneh<span class="accent">.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 class="title">Hi, I’m Roosevelt T. Konneh — a Web Developer & Video Producer</h1>
+                    <p class="lead">I build responsive, accessible and delightful web experiences using modern CSS and JavaScript.</p>
+                    <p class="cta-row">
+                        <a class="btn primary" href="contact.html">Hire Me</a>
+                        <a class="btn ghost" href="#projects">See Projects</a>
+                    </p>
+                </div>
+
+                <div class="hero-photo">
+                    <button class="photo-btn" id="openPhoto" aria-haspopup="dialog" aria-controls="photoModal">
+                        <img src="20240825_155050.jpg" alt="Roosevelt T. Konneh photo placeholder">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container projects">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="grid projects-grid">
+                <article class="card">
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">Design System</h3>
+                    <p class="card-body">A scalable component library with tokens, accessible components and docs.</p>
+                    <div class="card-actions"><a class="link" href="#">View</a></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3 class="card-title">Task Tracker</h3>
+                    <p class="card-body">Progressive web app that helps teams track and prioritize work.</p>
+                    <div class="card-actions"><a class="link" href="#">View</a></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3 class="card-title">Portfolio Site</h3>
+                    <p class="card-body">This site: responsive layout, animations, CSS Grid and Flexbox.</p>
+                    <div class="card-actions"><a class="link" href="#">View</a></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skill">HTML & CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">React</li>
+                <li class="skill">Design Systems</li>
+                <li class="skill">Accessibility</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <strong>Roosevelt T. Konneh</strong> — crafted with care.</p>
+            <nav class="socials">
+                <a class="social" href="https://wa.me//+231778846883">WhatsApp
+                </a>
+                <a class="social" href="https://github.com/roosevelttkonneh">GitHub</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="photoTitle">
+        <div class="modal-content">
+            <button class="modal-close" data-close>&times;</button>
+            <h3 id="photoTitle">About Roosevelt T. Konneh</h3>
+            <p>I’m a frontend developer focused on modern CSS, UX and accessible experiences. I love solving layout challenges with Grid and Flexbox.</p>
+            <p><strong>Tools:</strong> VS Code, Git, Chrome DevTools, Figma</p>
+            <div class="modal-actions">
+                <button class="btn" data-close>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
